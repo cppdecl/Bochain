@@ -1,0 +1,13 @@
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+cmake-build-debug/
+cmake-build-release/
+[Oo]ut/
+
+.idea/
+.vs/
+.cache/
+.git/
+.vscode/
+.CMakeLists.txt.swp

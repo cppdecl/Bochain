@@ -1,0 +1,44 @@
+Language: Cpp
+BasedOnStyle: Google
+IndentWidth: 4
+UseTab: true
+TabWidth: 4
+ColumnLimit: 120
+AllowShortIfStatementsOnASingleLine: false
+NamespaceIndentation: All
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+BraceWrapping:
+  AfterFunction: true
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: true
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+BreakBeforeBraces: Allman
+IncludeBlocks: Regroup
+IncludeCategories: 
+  - Regex: '^"(llvm|llvm-c|clang|clang-c)/'
+    Priority: 2
+    SortPriority: 0
+  - Regex: '^(<|"(gtest|gmock|isl|json)/)'
+    Priority: 3
+    SortPriority: 0
+  - Regex: '.*'
+    Priority: 1
+    SortPriority: 0
+  
+IndentCaseLabels: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: true
+AlwaysBreakTemplateDeclarations: Yes
+AlignAfterOpenBracket: true 
+AlignOperands: true
+FixNamespaceComments: false
