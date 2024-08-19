@@ -1,4 +1,5 @@
 #include "CommandHandler/CommandHandler.hh"
+#include "Node/Node.hh"
 #include "Utils/Clock.hh"
 #include "Utils/Log.hh"
 
@@ -19,9 +20,11 @@ int main()
 			}
 		});
 
-	for (;;)
-	{
-	}
+	Node node;
+	node.Initialize();
+	node.Listen();
+
+	Log::Info("Shutting down Bochain Node..");
 
 	return 0;
 }

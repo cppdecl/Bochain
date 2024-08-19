@@ -1,6 +1,7 @@
 #ifndef BOCHAIN_UTILS_LOG_HH
 #define BOCHAIN_UTILS_LOG_HH
 
+#define _WINSOCKAPI_
 #include <Windows.h>
 #include <chrono>
 #include <format>
